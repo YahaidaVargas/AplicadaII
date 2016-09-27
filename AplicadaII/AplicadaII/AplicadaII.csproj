@@ -137,6 +137,7 @@
     <Content Include="scripts\bootstrap.min.js" />
     <Content Include="scripts\jquery-1.9.1.js" />
     <Content Include="scripts\jquery-1.9.1.min.js" />
+    <Content Include="tarea4\default.aspx" />
     <Content Include="tarea4\rPersonasWf.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -156,6 +157,13 @@
       <DependentUpon>Maform.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tarea4\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tarea4\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="tarea4\rPersonasWf.aspx.cs">
       <DependentUpon>rPersonasWf.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
