@@ -59,8 +59,9 @@ namespace AplicadaII.tarea4
             Persona per = new Persona();
          gvPersona.DataSource = per.Listar();
             gvPersona.DataBind();
+        }
+            
                 
-         }
 
         protected void gvPersona_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {

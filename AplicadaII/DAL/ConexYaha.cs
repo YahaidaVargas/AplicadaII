@@ -111,13 +111,13 @@ namespace DAL
 
                 Adapter.Fill(dt);
             }
-            catch (Exception e)
+           /* catch (Exception e)
             {
 
-                Console.WriteLine("######error#######: {0}", e.Message);
+               // Console.WriteLine("######error#######: {0}", e.Message);
 
                 throw;
-            }
+            }*/
             finally
             {
                 _sncon.Close(); //cerramos la conexion

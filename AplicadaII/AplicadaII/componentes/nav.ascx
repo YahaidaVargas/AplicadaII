@@ -12,7 +12,7 @@
       <ul class="nav navbar-nav">
          <li><a href="default.aspx">Inicio </a></li>
         <li><a href="rPersonasWf.aspx">Registrar</a></li>
-          <li><a href="#">Consultar</a></li>
+          <li><a href="cConsulta.aspx">Consultar</a></li>
       </ul>
 
            </div>

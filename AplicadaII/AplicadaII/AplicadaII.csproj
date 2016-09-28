@@ -138,6 +138,8 @@
     <Content Include="scripts\bootstrap.min.js" />
     <Content Include="scripts\jquery-1.9.1.js" />
     <Content Include="scripts\jquery-1.9.1.min.js" />
+    <Content Include="tarea4\cConsulta.aspx" />
+    <Content Include="tarea4\cDetalle.aspx" />
     <Content Include="tarea4\default.aspx" />
     <Content Include="tarea4\rPersonasWf.aspx" />
     <Content Include="Web.config" />
@@ -158,6 +160,20 @@
       <DependentUpon>Maform.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tarea4\cConsulta.aspx.cs">
+      <DependentUpon>cConsulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tarea4\cConsulta.aspx.designer.cs">
+      <DependentUpon>cConsulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tarea4\cDetalle.aspx.cs">
+      <DependentUpon>cDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tarea4\cDetalle.aspx.designer.cs">
+      <DependentUpon>cDetalle.aspx</DependentUpon>
+    </Compile>
     <Compile Include="tarea4\default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
