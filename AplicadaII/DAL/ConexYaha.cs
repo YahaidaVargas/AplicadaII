@@ -92,27 +92,7 @@ namespace DAL
             return objeto;
         }
 
-        #endregion
-
-        /*conexion 
-
-        public class ConexionYa
-    {
-        //SqlConnection Conexion = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=FinanzasPersonalesDB;Integrated Security=True");
-
-        
-       
-       SqlConnection Conexion = new SqlConnection(@"Data Source=Yahaida-PC;Initial Catalog=Maranatha;Integrated Security=True");
-       // SqlConnection Conexion = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\DataBase\MaranathaDB.mdf;Integrated Security=True;Connect Timeout=30");
-        
-
-        /// <summary>
-        /// Ejecutar comandos a la base de datos, recuerde pasar solo los comandos que no retornan algun valor
-        /// </summary>
-        /// <param name="ComandoSql"></param>
-        /// <returns></returns>
-        
-
+        //buscar
 
         /// <summary>
         /// Ejecutar comandos que retornan algun resultset
@@ -126,34 +106,32 @@ namespace DAL
 
             try
             {
-                Conexion.Open(); // abrimos la conexion
-                Adapter = new SqlDataAdapter(ComandoSql, Conexion);
+                _sncon.Open(); // abrimos la conexion
+                Adapter = new SqlDataAdapter(ComandoSql, _sncon);
 
                 Adapter.Fill(dt);
             }
             catch (Exception e)
             {
 
-                Console.WriteLine("######error#######: {0}",e.Message);
-                
+                Console.WriteLine("######error#######: {0}", e.Message);
+
                 throw;
             }
             finally
             {
-                Conexion.Close(); //cerramos la conexion
+                _sncon.Close(); //cerramos la conexion
 
             }
             return dt;
         }
 
+
+        #endregion
+
+
+
         
-
-
-    }
-}
-
-
-    */
 
     }
 }

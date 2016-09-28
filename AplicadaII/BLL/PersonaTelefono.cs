@@ -8,7 +8,7 @@ using DAL;
 
 namespace BLL
 {
-    public class Persona
+    public class PersonaTelefono
     {
         private ConexYaha conexion = new ConexYaha();
 
@@ -16,9 +16,10 @@ namespace BLL
 
 
 
+        public int Id { get; set; }
         public int PersonaId { get; set; }
-        public string Nombre { get; set; }
-        public string Sexo { get; set; }
+        public string TipoTelefono { get; set; }
+        public string Telefono { get; set; }
       
 
 
@@ -30,16 +31,16 @@ namespace BLL
         public bool Insertar()
         {
 
-            string consulta = string.Format("insert into Personas (Nombres,Sexo) values('{0}','{1}') SELECT @@IDENTITY;", Nombre, Sexo);
-            PersonaId=Convert.ToInt32 (conexion.ObtenerValorDb(consulta).ToString());
+            string consulta = string.Format("insert into PersonasTelefonos (PersonasId,TipoTelefono,Telefono) values('{0}','{1}','{2}');", PersonaId, TipoTelefono,Telefono);
+            return (conexion.EjecutarDB(consulta));
 
-            return this.PersonaId > 0;
+            
         }
 
 
         public DataTable Listar(string campos = "*", string Filtro = "1=1")
         {
-            return conexion.BuscarDb("Select " + campos + " from Personas where " + Filtro);
+            throw new NotImplementedException();
         }
 
         public bool Modificar()
