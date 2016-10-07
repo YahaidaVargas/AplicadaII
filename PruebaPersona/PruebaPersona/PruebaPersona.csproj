@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{D90C6EEE-2E66-4E28-BAB4-97C65BD37C4B}</ProjectGuid>
+    <ProjectGuid>{82BF91BD-A1C4-4A05-875C-AAF7A6B53E07}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AplicadaII</RootNamespace>
-    <AssemblyName>AplicadaII</AssemblyName>
+    <RootNamespace>PruebaPersona</RootNamespace>
+    <AssemblyName>PruebaPersona</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -115,94 +115,34 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="componentes\nav.ascx" />
-    <Content Include="Content\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap-theme.min.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
-    <Content Include="DB\apli2.sql" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="MaestroDet\Detalle.aspx" />
-    <Content Include="MaestroDet\Padre.aspx" />
+    <Content Include="Personas.aspx" />
+    <Content Include="Registros\rPersona.aspx" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-theme.min.css.map" />
-    <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="maestras\Maform.Master" />
-    <None Include="scripts\jquery-1.9.1.intellisense.js" />
-    <Content Include="scripts\bootstrap.js" />
-    <Content Include="scripts\bootstrap.min.js" />
-    <Content Include="scripts\jquery-1.9.1.js" />
-    <Content Include="scripts\jquery-1.9.1.min.js" />
-    <Content Include="tarea4\cConsulta.aspx" />
-    <Content Include="tarea4\cDetalle.aspx" />
-    <Content Include="tarea4\default.aspx" />
-    <Content Include="tarea4\rPersonasWf.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="componentes\nav.ascx.cs">
-      <DependentUpon>nav.ascx</DependentUpon>
+    <Compile Include="maestra\Maestra.Master.cs">
+      <DependentUpon>Maestra.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="componentes\nav.ascx.designer.cs">
-      <DependentUpon>nav.ascx</DependentUpon>
+    <Compile Include="maestra\Maestra.Master.designer.cs">
+      <DependentUpon>Maestra.Master</DependentUpon>
     </Compile>
-    <Compile Include="maestras\Maform.Master.cs">
-      <DependentUpon>Maform.Master</DependentUpon>
+    <Compile Include="Personas.aspx.cs">
+      <DependentUpon>Personas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="maestras\Maform.Master.designer.cs">
-      <DependentUpon>Maform.Master</DependentUpon>
-    </Compile>
-    <Compile Include="MaestroDet\Detalle.aspx.cs">
-      <DependentUpon>Detalle.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="MaestroDet\Detalle.aspx.designer.cs">
-      <DependentUpon>Detalle.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="MaestroDet\Padre.aspx.cs">
-      <DependentUpon>Padre.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="MaestroDet\Padre.aspx.designer.cs">
-      <DependentUpon>Padre.aspx</DependentUpon>
+    <Compile Include="Personas.aspx.designer.cs">
+      <DependentUpon>Personas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="tarea4\cConsulta.aspx.cs">
-      <DependentUpon>cConsulta.aspx</DependentUpon>
+    <Compile Include="Registros\rPersona.aspx.cs">
+      <DependentUpon>rPersona.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="tarea4\cConsulta.aspx.designer.cs">
-      <DependentUpon>cConsulta.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="tarea4\cDetalle.aspx.cs">
-      <DependentUpon>cDetalle.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="tarea4\cDetalle.aspx.designer.cs">
-      <DependentUpon>cDetalle.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="tarea4\default.aspx.cs">
-      <DependentUpon>default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="tarea4\default.aspx.designer.cs">
-      <DependentUpon>default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="tarea4\rPersonasWf.aspx.cs">
-      <DependentUpon>rPersonasWf.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="tarea4\rPersonasWf.aspx.designer.cs">
-      <DependentUpon>rPersonasWf.aspx</DependentUpon>
+    <Compile Include="Registros\rPersona.aspx.designer.cs">
+      <DependentUpon>rPersona.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -210,7 +150,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="scripts\jquery-1.9.1.min.map" />
+    <Content Include="maestra\Maestra.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -218,13 +158,13 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">
-      <Project>{07900daa-0516-4906-b5ee-a02a2e7f9e2e}</Project>
+      <Project>{a5aad111-3159-473f-a1eb-37cbed5839fc}</Project>
       <Name>BLL</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -238,9 +178,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>63858</DevelopmentServerPort>
+          <DevelopmentServerPort>56541</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:63858/</IISUrl>
+          <IISUrl>http://localhost:56541/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

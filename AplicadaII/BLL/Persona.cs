@@ -10,11 +10,12 @@ namespace BLL
 {
     public class Persona
     {
+       
         private ConexYaha conexion = new ConexYaha();
 
 
 
-
+ 
 
         public int PersonaId { get; set; }
         public string Nombre { get; set; }

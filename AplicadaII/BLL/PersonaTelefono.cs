@@ -40,7 +40,7 @@ namespace BLL
 
         public DataTable Listar(string campos = "*", string Filtro = "1=1")
         {
-            throw new NotImplementedException();
+            return conexion.BuscarDb("Select " + campos + " from PersonasTelefonos where " + Filtro);
         }
 
         public bool Modificar()
